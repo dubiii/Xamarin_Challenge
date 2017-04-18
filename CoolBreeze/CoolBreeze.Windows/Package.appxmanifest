@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="a2143b2d-51b2-48dc-8b94-486deb6c5649" Publisher="CN=dubi" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>CoolBreeze.Windows</DisplayName>
+    <PublisherDisplayName>dubi</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="CoolBreeze.Windows.App">
+      <m2:VisualElements DisplayName="CoolBreeze.Windows" Square150x150Logo="CoolBreeze_150x150.png" Square30x30Logo="Assets\SmallLogo.png" Description="CoolBreeze.Windows" ForegroundText="light" BackgroundColor="#003366">
+        <m2:SplashScreen Image="Assets\CoolBreeze_splash.png" BackgroundColor="#003366" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>
